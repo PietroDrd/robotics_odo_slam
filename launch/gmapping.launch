@@ -1,0 +1,18 @@
+<launch>
+
+
+<param name="/use_sim_time" value="true"/>
+<node pkg="rviz" type="rviz" name="rviz"></node>
+
+<include file="$(find progetto_robotics_seconda_parte)/config/scan_merger_config.launch"/>
+
+<include file="$(find progetto_robotics_seconda_parte)/launch/project2.launch"/>
+  
+<include file="$(find progetto_robotics_seconda_parte)/config/gmapping_config.launch"/>
+
+
+
+
+
+
+</launch>

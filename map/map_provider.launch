@@ -1,0 +1,6 @@
+<launch>
+
+    <arg name="map_file"  default="$(find progetto_robotics_seconda_parte)/map/map.yaml"/> 
+    <node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"/>
+
+</launch>

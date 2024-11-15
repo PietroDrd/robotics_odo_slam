@@ -1,0 +1,21 @@
+<launch>
+
+	<param name="/use_sim_time" value="true"/> 
+
+	<include file="$(find progetto_robotics_seconda_parte)/launch/project2.launch"/>
+	<include file="$(find progetto_robotics_seconda_parte)/config/scan_merger_config.launch"/>
+
+ 	<include file="$(find progetto_robotics_seconda_parte)/config/amcl_config.launch"/>
+
+	<node pkg="rviz" type="rviz" name="rviz"></node>
+
+	<node pkg="hector_trajectory_server" type="hector_trajectory_server" name="hector_trajectory_server" output="screen">
+    <param name="target_frame_name" type="string" value="map" />
+    <param name="source_frame_name" type="string" value="base_link" />
+    <param name="trajectory_update_rate" type="double" value="4" />
+    <param name="trajectory_publish_rate" type="double" value="0.25" />
+
+</node>
+
+
+</launch>
