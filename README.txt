@@ -1,6 +1,6 @@
-10674299 Dardano Pietro
-10607673 Desiderato Lorenzo
-10632869 Ghilotti Filippo
+Dardano Pietro
+Desiderato Lorenzo
+Ghilotti Filippo
 ___________________________________________________________________________
 
 -- LAUNCH --
